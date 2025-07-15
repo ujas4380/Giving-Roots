@@ -1,0 +1,65 @@
+.patient-home-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.hero {
+  padding: 60px 0;
+  background-color: #f0f8ff;
+}
+
+.heroText {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.animated-info {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.heroLinks {
+  margin-top: 20px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.custom-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+}
+
+.gallery {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.galleryImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.featured-circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+.site-footer {
+  background-color: #003366;
+  color: white;
+  padding: 40px 0;
+  margin-top: auto;
+}

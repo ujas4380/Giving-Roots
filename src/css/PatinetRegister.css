@@ -1,0 +1,14 @@
+.register-page {
+  background: linear-gradient(to bottom right, #f0f8ff, #dbeeff);
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.register-container {
+  padding-bottom: 60px;
+}
+
+.form-card {
+  max-width: 550px;
+  background-color: #ffffff;
+}

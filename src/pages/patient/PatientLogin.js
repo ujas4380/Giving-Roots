@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../../css/PatientLogin.css';
-
 function PatientLogin() {
   const [patientEmail, setPatientEmail] = useState('');
   const [patientPassword, setPatientPassword] = useState('');
@@ -20,11 +19,10 @@ function PatientLogin() {
         patientEmail,
         patientPassword
       });
-
       if (response.status === 200) {
         toast.success("Login successful!", { autoClose: 1000 });
         setTimeout(() => {
-          navigate('/success');
+          navigate('/patientHome');
         }, 1500);
       }
     } catch (error) {
@@ -69,14 +67,13 @@ function PatientLogin() {
           />
 
           <div className="forgot-password">
-            <a href="#">Forgot password?</a>
           </div>
           {errorMessage && <div className="login-error">{errorMessage}</div>}
 
           <button type="submit" className="login-button">Login</button>
 
           <div className="signup-link">
-            New user? <a href="#">Sign up</a>
+            New user? <a href="/patientRegister">Sign up</a>
           </div>
         </form>
         <ToastContainer />
